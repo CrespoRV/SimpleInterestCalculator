@@ -6,7 +6,6 @@ body {background-color: black;
 
 h1{
     color:gray;
-    font-size: 3rem;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
@@ -16,8 +15,14 @@ h1{
 }
 
 label,button{
-    justify-self: left;
-    margin-left: 10rem;
+    justify-self: right;
+    width:9em;
+    text-align: left;  
+}
+
+button{
+    justify-self: center;
+    margin-left: 6em;
 }
 
 input,span{
@@ -26,20 +31,21 @@ input,span{
 
 form{
     display:grid;
-    grid-template-columns: auto 1fr;
+    grid-template-columns: auto auto;
     grid-template-rows: repeat(4,auto);
     row-gap: 0.8em;
     justify-self: center;
 }
 
 #principal_container{
+    width:500px;
     display: flex;
     flex-direction: column;
-    width:fit-content;
     background-color: white;
     margin: 0 auto;
     border-radius: 2em;
     padding: 30px;
+    margin-left: auto;
 }
 
 footer{
@@ -47,7 +53,7 @@ footer{
 }
 
 select{
-    width:13%
+    width:4em;
 }
 
 
