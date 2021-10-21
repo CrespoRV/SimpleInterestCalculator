@@ -2,12 +2,27 @@
 body {background-color: black;
       text-align: center;
 }
+
+h1{
+    color:gray;
+}
+
 .center{
     text-align: center;
     align-content: center;
 }
 
-h1{color:gray;}
+.item1{
+    justify-self: left;
+}
+
+form{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    column-gap: 1em;
+    row-gap: 1em;
+}
 
 #principal_container{
     display: flex;
@@ -16,6 +31,15 @@ h1{color:gray;}
     background-color: white;
     margin: 0 auto;
     border-radius: 2em;
+    padding: 30px;
+}
+
+footer{
+    text-align: left;
+}
+
+select{
+    width:30%
 }
 
 
