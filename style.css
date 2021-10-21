@@ -1,4 +1,21 @@
-body {background-color:tan;}
-h1{color:green;}
+
+body {background-color: black;
+      text-align: center;
+}
+.center{
+    text-align: center;
+    align-content: center;
+}
+
+h1{color:gray;}
+
+#principal_container{
+    display: flex;
+    flex-direction: column;
+    width:fit-content;
+    background-color: white;
+    margin: 0 auto;
+    border-radius: 2em;
+}
 
 
