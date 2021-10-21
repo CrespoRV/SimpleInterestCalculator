@@ -1,10 +1,13 @@
 
 body {background-color: black;
       text-align: center;
+      font-family: Arial, Helvetica, sans-serif;
 }
 
 h1{
     color:gray;
+    font-size: 3rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .center{
@@ -12,16 +15,21 @@ h1{
     align-content: center;
 }
 
-.item1{
+label,button{
+    justify-self: left;
+    margin-left: 10rem;
+}
+
+input,span{
     justify-self: left;
 }
 
 form{
     display:grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
-    column-gap: 1em;
-    row-gap: 1em;
+    grid-template-columns: auto 1fr;
+    grid-template-rows: repeat(4,auto);
+    row-gap: 0.8em;
+    justify-self: center;
 }
 
 #principal_container{
@@ -39,7 +47,7 @@ footer{
 }
 
 select{
-    width:30%
+    width:13%
 }
 
 
