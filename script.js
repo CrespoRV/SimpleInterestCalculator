@@ -9,9 +9,15 @@ function compute()
     var interest = principal * years * rate /100;
     var year = new Date().getFullYear()+parseInt(years);
 
-    document.getElementById("result").innerText="HOLA";
+    if (principal<=0){
+        alert("Enter a positive number");
+        document.getElementById("principal").focus();
+        return;
+    }
 
-    // result.innerHTML="if you deposite " + principal + ",<br>" + "at an interest rate of " + rate + ",<br>" + "You will receive an amount of " +  interest + ",<br>" + "in the year " + year
+    document.getElementById("result");
+
+    result.innerHTML="<p>if you deposite <mark> " + principal + "</mark>,</p>" + "<p>at an interest rate of <mark>" + rate + "</mark>,</p>" + "<p>You will receive an amount of <mark>" +  interest + "</mark>,</p>" + "<p>in the year <mark>" + year + "</mark></p>";
     
 }
      

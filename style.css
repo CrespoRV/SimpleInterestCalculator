@@ -22,19 +22,21 @@ label,button{
 
 button{
     justify-self: center;
-    margin-left: 6em;
+    margin-left: 5em;
 }
 
 input,span{
     justify-self: left;
 }
 
-form{
+
+#formulario{
     display:grid;
-    grid-template-columns: auto 1fr;
+    grid-template-columns: 1fr 1fr;
     grid-template-rows: repeat(4,auto);
     row-gap: 0.8em;
     justify-self: center;
+    margin-bottom: 1em;
 }
 
 #principal_container{
@@ -48,7 +50,13 @@ form{
     margin-left: auto;
 }
 
+p{
+    width:fit-content;
+    margin:0 0 0 6em;
+}
+
 footer{
+    margin-top:1em;
     text-align: left;
 }
 
